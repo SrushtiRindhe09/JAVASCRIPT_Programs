@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fun with Scripting</title>
+</head>
+<body onload="openwin()" onunload="closewin()">
+
+<script>
+    var mywin;
+
+    // Function to open a new window with a welcome message
+    function openwin() {
+        mywin = window.open("", "mywindow", "width=600,height=600");
+        if (mywin) {
+            mywin.document.write("<p>WELCOME TO SCRIPTING</p>");
+        }
+    }
+
+    // Function to open another window with a message on unload
+    function closewin() {
+        if (mywin) {
+            mywin.close();
+        }
+        // Open a new window with a different message when the page unloads
+        var unloadWin = window.open("", "unloadWindow", "width=600,height=600");
+        if (unloadWin) {
+            unloadWin.document.write("<p>FUN WITH SCRIPTING</p>");
+        }
+    }
+</script>
+
+</body>
+</html>

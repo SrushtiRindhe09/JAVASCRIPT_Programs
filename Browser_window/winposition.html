@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Positin of window</title>
+</head>
+<body>
+<script>
+var mywin;
+function display()
+{
+ mywin=window.open("","mywindow");
+ mywin.document.write("<p>This is my new window</p>");
+ mywin.document.write("Screen X"+mywin.screenX);
+ mywin.documwnt.write("Screen Y"+mywin.screeenY);
+}
+</script>
+<button onclick="display()">Position of Window</button>
+</body>
+</html>

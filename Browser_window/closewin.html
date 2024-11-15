@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> closing a browser window</title>
+</head>
+<body>
+<button onclick="openwin()">Open</button>
+<button onclick="closewin()">Close</button>
+<script>
+
+var mywin;
+function openwin()
+{
+  mywin=window.open("https://www.google.com/");
+}
+function closewin()
+{
+  if(mywin)
+  {
+    mywin.close();
+  }
+  else
+  {
+    alert("No opened window to close");
+  } 
+}
+</script>
+</body>
+</html>

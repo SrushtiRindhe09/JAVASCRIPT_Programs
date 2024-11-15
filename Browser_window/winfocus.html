@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Window focus</title>
+</head>
+<body>
+<p> focused window</p>
+<button onclick="mywindow()
+">try it</button>
+<script>
+function mywindow()
+{
+  var mywin=window.open("","","","width=200, height=600");
+  mywin.document.write("<p>A new Window</p>");
+  mywin.focus();
+}
+</script>
+</body>
+</html>
